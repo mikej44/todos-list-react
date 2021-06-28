@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mikej44/todos-list-react/static/css/main.718345ae.chunk.css",
+    "main.js": "/mikej44/todos-list-react/static/js/main.f33844e6.chunk.js",
+    "main.js.map": "/mikej44/todos-list-react/static/js/main.f33844e6.chunk.js.map",
+    "runtime-main.js": "/mikej44/todos-list-react/static/js/runtime-main.6d352c71.js",
+    "runtime-main.js.map": "/mikej44/todos-list-react/static/js/runtime-main.6d352c71.js.map",
+    "static/js/2.5a3c2404.chunk.js": "/mikej44/todos-list-react/static/js/2.5a3c2404.chunk.js",
+    "static/js/2.5a3c2404.chunk.js.map": "/mikej44/todos-list-react/static/js/2.5a3c2404.chunk.js.map",
+    "static/js/3.e2d6278d.chunk.js": "/mikej44/todos-list-react/static/js/3.e2d6278d.chunk.js",
+    "static/js/3.e2d6278d.chunk.js.map": "/mikej44/todos-list-react/static/js/3.e2d6278d.chunk.js.map",
+    "index.html": "/mikej44/todos-list-react/index.html",
+    "static/css/main.718345ae.chunk.css.map": "/mikej44/todos-list-react/static/css/main.718345ae.chunk.css.map",
+    "static/js/2.5a3c2404.chunk.js.LICENSE.txt": "/mikej44/todos-list-react/static/js/2.5a3c2404.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/mikej44/todos-list-react/static/media/rubbish.6049e996.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d352c71.js",
+    "static/js/2.5a3c2404.chunk.js",
+    "static/css/main.718345ae.chunk.css",
+    "static/js/main.f33844e6.chunk.js"
+  ]
+}
