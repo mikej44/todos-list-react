@@ -7,7 +7,7 @@ import Header from "./Header";
 import Container from "./Container";
 
 const nextYearTasks = [
-  { id: 1, content: "przejść na reacta", done: false },
+  { id: 1, content: "przejść na reacta", done: true },
   { id: 2, content: "zjeść obiad", done: true },
 ];
 
