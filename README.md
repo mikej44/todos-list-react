@@ -1,6 +1,29 @@
-# TO DO LIST 
+# Next Year Task List 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It lets you do below actions:
+
+* add tasks
+* mark tasks as done
+* remove tasks
+* hide tasks that are done
+* mark all tasks as done
+
+![Project screen](public\screen2.png)
+
+## Used technologies
+
+* HTML
+* CSS
+* javascript
+* BEM convention
+* Immutability
+* React
+* Create-React-App
+* Webpack
+## Demo
+
+[LINK](https://mikej44.github.io/todos-list-react/)
 
 ## Available Scripts
 
