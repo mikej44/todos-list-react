@@ -1,10 +1,10 @@
 import "./style.css";
 
-const NextYearTasks = (props) => (
+const NextYearTasks = ({ nextYearTasks, hideDone, removeTask }) => (
   <ul className="list">
-    {props.nextYearTasks.map(nextYearTask => (
+    {nextYearTasks.map(nextYearTask => (
       <li
-        className={`listItem ${nextYearTask.done && props.hideDone
+        className={`listItem ${nextYearTask.done && hideDone
           ? "listItem--hide"
           : ""}`}
         key={nextYearTask.id}
@@ -13,7 +13,9 @@ const NextYearTasks = (props) => (
         <span className={`listItemText ${nextYearTask.done ? "taskDone" : ""}`}>
           {nextYearTask.content}
         </span>
-        <button className="button button--remove"></button>
+        <button 
+        className="button button--remove"
+        onClick={() => removeTask(nextYearTask.id)}></button>
       </li>
     ))}
   </ul>
