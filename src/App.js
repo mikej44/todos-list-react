@@ -20,7 +20,17 @@ function App() {
   };
 
   const removeTask = (id) => {
-    setNextYearTasks(nextYearTask => nextYearTask.filter(nextYearTask => nextYearTask.id != id));
+    setNextYearTasks(nextYearTask => nextYearTask.filter(nextYearTask => nextYearTask.id !== id));
+  };
+
+  const toggleTaskDone = (id) => {
+    setNextYearTasks(nextYearTasks => nextYearTasks.map(nextYearTask => {
+      if (nextYearTask.id === id) {
+        return { ...nextYearTask, done: !nextYearTask.done };
+      }
+
+      return nextYearTask;
+    }))
   };
 
   return (
@@ -37,6 +47,7 @@ function App() {
           nextYearTasks={nextYearTasks}
           hideDone={hideDone}
           removeTask={removeTask}
+          toggleTaskDone={toggleTaskDone}
         />}
         extraHeaderContent={<Buttons
           nextYearTasks={nextYearTasks}

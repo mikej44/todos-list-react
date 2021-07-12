@@ -1,6 +1,6 @@
 import "./style.css";
 
-const NextYearTasks = ({ nextYearTasks, hideDone, removeTask }) => (
+const NextYearTasks = ({ nextYearTasks, hideDone, removeTask, toggleTaskDone }) => (
   <ul className="list">
     {nextYearTasks.map(nextYearTask => (
       <li
@@ -9,13 +9,15 @@ const NextYearTasks = ({ nextYearTasks, hideDone, removeTask }) => (
           : ""}`}
         key={nextYearTask.id}
       >
-        <button className={`button ${nextYearTask.done ? "button--thick" : ""}`}></button>
+        <button
+          onClick={() => toggleTaskDone(nextYearTask.id)}
+          className={`button ${nextYearTask.done ? "button--thick" : ""}`}></button>
         <span className={`listItemText ${nextYearTask.done ? "taskDone" : ""}`}>
           {nextYearTask.content}
         </span>
-        <button 
-        className="button button--remove"
-        onClick={() => removeTask(nextYearTask.id)}></button>
+        <button
+          className="button button--remove"
+          onClick={() => removeTask(nextYearTask.id)}></button>
       </li>
     ))}
   </ul>

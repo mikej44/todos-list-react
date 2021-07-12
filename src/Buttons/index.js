@@ -13,8 +13,8 @@ const Buttons = ({ nextYearTasks, hideDone, toggleHideDone }) => {
           `taskList__button`}>
           {hideDone ? "Pokaż ukończone" : "Ukryj ukończone"}
         </button>
-        <button className={
-          `taskList__button${nextYearTasks.every(({ done }) => done) ? " disabled" : ""}`}
+        <button className="taskList__button"
+          disabled={nextYearTasks.every(({ done }) => done)}
         > Ukończ wszystkie
         </button>
       </>
