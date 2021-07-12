@@ -4,7 +4,7 @@ const NextYearTasks = (props) => (
   <ul className="list">
     {props.nextYearTasks.map(nextYearTask => (
       <li
-        className={`listItem ${nextYearTask.done && props.hideDoneTasks
+        className={`listItem ${nextYearTask.done && props.hideDone
           ? "listItem--hide"
           : ""}`}
         key={nextYearTask.id}
