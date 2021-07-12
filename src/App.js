@@ -33,6 +33,13 @@ function App() {
     }))
   };
 
+  const setAllDone = () => {
+    setNextYearTasks(nextYearTasks =>
+      nextYearTasks.map(nextYearTask => ({
+        ...nextYearTask, done: true
+      })));
+  };
+
   return (
     <Container>
       <Header title="Lista celów na przyszły rok" />
@@ -53,6 +60,7 @@ function App() {
           nextYearTasks={nextYearTasks}
           hideDone={hideDone}
           toggleHideDone={toggleHideDone}
+          setAllDone={setAllDone}
         />}
       />
     </Container>
