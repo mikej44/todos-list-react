@@ -1,0 +1,5 @@
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(30px, 1100px);
+}

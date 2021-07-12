@@ -5,12 +5,12 @@ const NextYearTasks = (props) => (
     {props.nextYearTasks.map(nextYearTask => (
       <li
         className={`listItem ${nextYearTask.done && props.hideDoneTasks
-            ? "listItem--hide"
-            : ""}`}
+          ? "listItem--hide"
+          : ""}`}
         key={nextYearTask.id}
-        >
+      >
         <button className={`button ${nextYearTask.done ? "button--thick" : ""}`}></button>
-        <span className={`newItemText ${nextYearTask.done ? "taskDone" : ""}`}>
+        <span className={`listItemText ${nextYearTask.done ? "taskDone" : ""}`}>
           {nextYearTask.content}
         </span>
         <button className="button button--remove"></button>
