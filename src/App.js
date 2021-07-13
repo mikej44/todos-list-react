@@ -40,12 +40,24 @@ function App() {
       })));
   };
 
+  const addNewTask = (content) => {
+    setNextYearTasks(nextYearTasks => [
+      ...nextYearTasks,
+      {
+        content,
+        done: false,
+        id: nextYearTasks.length ? nextYearTasks[nextYearTasks.length - 1].id + 1 : 1,
+      }
+    ]);
+
+  };
+
   return (
     <Container>
       <Header title="Lista celów na przyszły rok" />
       <Section
         title="Dodaj cel"
-        body={<Form />}
+        body={<Form addNewTask={addNewTask} />}
       />
 
       <Section
