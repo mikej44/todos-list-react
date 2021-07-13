@@ -13,7 +13,7 @@ const NextYearTasks = ({ nextYearTasks, hideDone, removeTask, toggleTaskDone }) 
           onClick={() => toggleTaskDone(nextYearTask.id)}
           className={`button ${nextYearTask.done ? "button--thick" : ""}`}></button>
         <span className={`listItemText ${nextYearTask.done ? "taskDone" : ""}`}>
-          {nextYearTask.content}
+          {nextYearTask.id} - {nextYearTask.content}
         </span>
         <button
           className="button button--remove"
