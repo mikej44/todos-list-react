@@ -9,7 +9,7 @@ It lets you do below actions:
 * hide tasks that are done
 * mark all tasks as done
 
-![Project screen](public\screen2.png)
+![Project screen](https://github.com/mikej44/todos-list-react/blob/main/public/screen2.png)
 
 ## Used technologies
 
